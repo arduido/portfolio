@@ -1,3 +1,7 @@
+document.querySelectorAll('.js-current-year').forEach((element) => {
+  element.textContent = new Date().getFullYear();
+});
+
 const scrollElements = document.querySelectorAll('.js-scroll');
 
 const elementInView = (el, dividend = 1) => {
